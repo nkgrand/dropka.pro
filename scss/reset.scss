@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: "Gotham", sans-serif;
+}
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+input,
+button {
+  border: none;
+}
+input,
+label {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: var(--bg-color);
+}

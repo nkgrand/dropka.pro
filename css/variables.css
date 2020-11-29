@@ -1,0 +1,17 @@
+:root {
+  --radial-bg-gradient: radial-gradient(rgba(136, 88, 88, 0), #000000);
+  --link-hover-color: #7a181a;
+  --header-bg-color: #cb3335;
+  --header-height: 80px;
+  --header-mobile-height: 50px;
+  --white-color: #fff;
+  --bg-color: #cf8283;
+  --btn-bg-color: #2665af;
+  --btn-bg-color-hover: #3287e7;
+  --terakot-text-color: #fca2a2;
+  --card-title-bg-color: #833333;
+  --footer-bg-color: #000;
+  --footer-link-hover: #2665af;
+}
+
+/*# sourceMappingURL=variables.css.map */

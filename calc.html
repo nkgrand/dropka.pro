@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Взрослый заработок на дропшипинге</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper page-content">
+        <nav class="nav" id="nav">
+          <button class="nav__toggle" id="toggle"></button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#!" class="nav__link"
+                ><img src="./img/logo.png" alt=""
+              /></a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html" class="nav__link"><span>Главная</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"><span>Топ товаров</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"><span>Калькулятор прибыли</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"><span>Блог</span></a>
+            </li>
+            <li class="nav__item mobile-hide">
+              <a href="" class="nav__link">
+                <i class="fab fa-facebook" style="font-size: 28px"></i>
+              </a>
+            </li>
+            <li class="nav__item mobile-hide">
+              <a href="" class="nav__link">
+                <i class="fab fa-vk" style="font-size: 28px"></i>
+              </a>
+            </li>
+            <li class="nav__item mobile-hide">
+              <a href="" class="nav__link">
+                <i class="fab fa-telegram-plane" style="font-size: 28px"></i>
+              </a>
+            </li>
+            <li class="nav__item desktop-hide mobile-show">
+              <a href="" class="nav__link">
+                <i class="fab fa-facebook" style="font-size: 28px"></i>
+              </a>
+              <a href="" class="nav__link">
+                <i class="fab fa-vk" style="font-size: 28px"></i>
+              </a>
+              <a href="" class="nav__link">
+                <i class="fab fa-telegram-plane" style="font-size: 28px"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="" class="nav__link btn btn-blue"><span>ВХОД</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="top-section calc">
+        <div class="wrapper page-content">
+          <div class="inner__calc">
+            <div class="card__content">
+              <div class="card">
+                <div class="card__header">
+                  <h3>Калькулятор прибыли</h3>
+                </div>
+                <div class="card__body">
+                  <div class="form-row">
+                    <div class="col">
+                      <div>
+                        <h5 class="col-text">
+                          Сумма заказа с доставкой и ДОП продажей
+                        </h5>
+                        <input
+                          type="range"
+                          data-grid="true"
+                          data-min="0"
+                          data-max="300000"
+                          data-from="25000"
+                          data-step="10"
+                          data-postfix=" тнг"
+                          class="calc js-range-slider"
+                          id="summa_zakaza"
+                          min="0"
+                          max="3000000"
+                          step="10"
+                          value="25000"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <div class="">
+                        <h5 class="col-text">Цена товара</h5>
+                        <input
+                          type="range"
+                          data-grid="true"
+                          data-min="0"
+                          data-max="30000"
+                          data-step="100"
+                          data-from="5500"
+                          data-postfix=" тнг"
+                          class="calc js-range-slider"
+                          id="cena_tovara"
+                          min="0"
+                          max="30000"
+                          step="100"
+                          value="5500"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <div class="">
+                        <h5 class="col-text">Цена ДОПа</h5>
+                        <input
+                          type="range"
+                          data-grid="true"
+                          data-min="0"
+                          data-max="10000"
+                          data-from="3000"
+                          data-step="100"
+                          data-postfix=" тнг"
+                          class="calc js-range-slider"
+                          id="cena_dopa"
+                          min="0"
+                          max="10000"
+                          step="100"
+                          value="3000"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <div class="">
+                        <h5 class="col-text">Реклама</h5>
+                        <input
+                          type="range"
+                          data-grid="true"
+                          data-min="0"
+                          data-max="10000"
+                          data-from="3000"
+                          data-step="10"
+                          data-postfix=" тнг"
+                          class="calc js-range-slider"
+                          id="reklama"
+                          min="0"
+                          max="10000"
+                          step="10"
+                          value="3000"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <div class="">
+                        <h5 class="col-text">Обработка заказа оператором</h5>
+                        <input
+                          type="range"
+                          data-grid="true"
+                          data-min="0"
+                          data-max="1000"
+                          data-from="600"
+                          data-step="1"
+                          data-postfix=" тнг"
+                          class="calc js-range-slider"
+                          id="obrabotka_zakaza"
+                          min="0"
+                          max="1000"
+                          step="1"
+                          value="600"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <div class="">
+                        <h5 class="col-text">Обработка ДОПа оператором</h5>
+                        <input
+                          type="range"
+                          data-grid="true"
+                          data-min="0"
+                          data-max="1000"
+                          data-from="600"
+                          data-step="1"
+                          data-postfix=" тнг"
+                          class="calc js-range-slider"
+                          id="obrabotka_dop"
+                          min="0"
+                          max="1000"
+                          step="1"
+                          value="600"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <div class="">
+                        <h5 class="col-text">Доставка</h5>
+                        <input
+                          type="range"
+                          data-grid="true"
+                          data-min="0"
+                          data-max="10000"
+                          data-from="1800"
+                          data-step="1"
+                          data-postfix=" тнг"
+                          class="calc js-range-slider"
+                          id="dostavka"
+                          min="0"
+                          max="10000"
+                          step="1"
+                          value="1800"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <div class="">
+                        <h5 class="col-text">Комиссия</h5>
+                        <input
+                          type="range"
+                          data-grid="true"
+                          data-min="0"
+                          data-max="10000"
+                          data-from="1500"
+                          data-step="1"
+                          data-postfix=" тнг"
+                          class="calc js-range-slider"
+                          id="komisija"
+                          min="0"
+                          max="10000"
+                          step="1"
+                          value="1500"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <div class="">
+                        <h5 class="col-text">Количество заказов</h5>
+                        <input
+                          type="range"
+                          data-grid="true"
+                          data-min="0"
+                          data-max="1000"
+                          data-from="1"
+                          data-step="1"
+                          data-postfix=" шт."
+                          class="calc js-range-slider"
+                          id="kolichestvo_zakazov"
+                          min="0"
+                          max="1000"
+                          step="1"
+                          value="1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <div class="">
+                        <h5 class="col-text">Процент не выкупа</h5>
+                        <input
+                          type="range"
+                          data-grid="true"
+                          data-min="0"
+                          data-max="100"
+                          data-from="70"
+                          data-step="1"
+                          data-postfix=" %"
+                          class="calc js-range-slider"
+                          id="ne_vikup"
+                          min="0"
+                          max="100"
+                          step="1"
+                          value="70"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <div class="">
+                        <h5 class="col-text">РКО</h5>
+                        <input
+                          type="range"
+                          data-grid="true"
+                          data-min="0"
+                          data-max="10"
+                          data-from="2.5"
+                          data-step="0.25"
+                          data-postfix=" %"
+                          class="calc js-range-slider"
+                          id="rko"
+                          min="0"
+                          max="10"
+                          step="0.25"
+                          value="2.5"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col price">
+                      <h4>Прибыль</h4>
+                      <h4 class="col-text">
+                        <span class="calc" id="summary">4800 тнг</span>
+                      </h4>
+                    </div>
+                    <div class="col price">
+                      <h4>РКО</h4>
+                      <h4 class="col-text">
+                        <span class="calc" id="summary_rko">625 тнг</span>
+                      </h4>
+                    </div>
+                    <hr style="width: 90%" />
+                    <div class="col price big">
+                      <h4>Чистый доход</h4>
+                      <h4 class="col-text">
+                        <span class="calc" id="chistiy_dohod">4175 тнг</span>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper page-content">
+        <div class="block__content">
+          <div class="block">
+            <h4 class="block__title">Полезные ссылки</h4>
+            <span class="red-line"></span>
+            <a href="" class="block__link">Расчет прибыли</a>
+            <a href="" class="block__link">Блог</a>
+          </div>
+          <div class="block">
+            <button class="btn btn-blue btn-connect">
+              Связаться с ДРОПКА.ПРО
+            </button>
+            <button class="btn btn-blue btn-connect">
+              Подписаться на ДРОПКА.ПРО
+            </button>
+            <a href="" class="policy">Политика конфиденциальности</a>
+            <p class="copyright">&copy; 2020 | Copyright: DROPKA.PRO</p>
+          </div>
+          <div class="block">
+            <h4 class="block__title">Контакты</h4>
+            <span class="red-line"></span>
+            <a href="" class="block__link">
+              <i class="fab fa-telegram-plane"></i>@Dropka_pro_support
+            </a>
+            <a href="" class="block__link">
+              <i class="far fa-envelope"></i>dropka.pro@gmail.com
+            </a>
+            <a href="" class="block__link">
+              <i class="fab fa-facebook"></i>facebook.com/Dropka.pro
+            </a>
+            <a href="" class="block__link">
+              <i class="fab fa-vk"></i>vk.com/dropka_pro
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      toggle.onclick = () => {
+        nav.classList.toggle("expand");
+        if (!nav.classList.contains("expand")) {
+          setTimout(() => {
+            nav.classList.add("closed");
+          }, 500);
+        }
+      };
+    </script>
+    <script>
+      $("input.calc").change(function () {
+        var summa_zakaza = parseInt($("#summa_zakaza").val());
+        var cena_tovara = parseInt($("#cena_tovara").val());
+        var cena_dopa = parseInt($("#cena_dopa").val());
+        var reklama = parseInt($("#reklama").val());
+        var obrabotka_zakaza = parseInt($("#obrabotka_zakaza").val());
+        var obrabotka_dop = parseInt($("#obrabotka_dop").val());
+        var dostavka = parseInt($("#dostavka").val());
+        var komisija = parseInt($("#komisija").val());
+        var kolichestvo_zakazov = parseInt($("#kolichestvo_zakazov").val());
+        var ne_vikup = parseFloat($("#ne_vikup").val());
+        var rko = parseFloat($("#rko").val());
+
+        var ne_vikup1 = ne_vikup / 100;
+        var itogo =
+          cena_tovara +
+          cena_dopa +
+          reklama +
+          obrabotka_zakaza +
+          obrabotka_dop +
+          dostavka +
+          komisija;
+
+        var itogo1 = reklama + obrabotka_zakaza + obrabotka_dop + dostavka;
+
+        var rashodi_na_vikup = itogo + itogo1 * ne_vikup1;
+        var total = summa_zakaza - rashodi_na_vikup;
+
+        var summary = Math.ceil(total * kolichestvo_zakazov);
+        // summary = summary.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+        var rko = parseFloat($("#rko").val());
+        var rko1 = rko / 100;
+        console.log(rko1);
+        var summary_rko = Math.ceil((rashodi_na_vikup + summary) * rko1);
+
+        var chistiy_dohod = summary - summary_rko;
+
+        $("#summary").text(summary);
+        if (summary < 0) {
+          $("#summary").text(summary + " тнг");
+          $("#summary_text").text("Не лей в минус (⊙_⊙)");
+        } else {
+          $("#summary").text(summary + " тнг");
+          $("#summary_text").text("");
+        }
+
+        $("#summary_rko").text(summary_rko + " тнг");
+
+        $("#chistiy_dohod").text(chistiy_dohod + " тнг");
+      });
+    </script>
+  </body>
+</html>
